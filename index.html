@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="viewport" content="width=device-width">
+    <script src="js/jquery-2.1.3.min.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <!-- <link rel="icon" href="img/favicon.png" /> -->
+    <title>近所に詳しくなろうぜアプリ</title>
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://c-inoue09.github.io/gs-kadai06-api">
+    <meta property="og:image" content="https://user-images.githubusercontent.com/113824527/205081670-b2f8e969-1f1e-4bf4-a7a5-587d9256a60f.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="近所に詳しくなろうぜ！" />
+    <meta property="og:description" content="現在地周辺のスポットについて、強制的に詳しくなっちゃおう！" />
+    <meta property="og:site_name" content="近所に詳しくなろうぜアプリ | byイノウエ" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="css/style.css">
+
+  </head>
+
+
+  <body>
+    <!-- <div class="wrapper"> -->
+      <h1>近所に詳しくなろうぜ！！</h1>
+
+      <!-- MapArea -->
+      <div id="view"></div>
+      <div id="myMap"></div>
+      <!-- /MapArea -->
+
+      <div id = "articles"> 
+        <div id = "msg-after"></div>
+        <div id = "article-area"></div>
+
+        <div class="p-wikipedia">
+          <div class="p-wikipedia__inner">
+            <h2 class="p-wikipedia__heading">ご近所ハカセに俺は…</h2>
+              <div class="p-wikipedia__search">
+                  <!-- <input id="js-wikipedia-input" type="text" value="" placeholder="検索ワード"> -->
+                  <button id="js-wikipedia-button" type="button">なる!</button>
+                  <button id="naranai-button" type="button">ならない!</button>
+              </div>
+            <div class="p-wikipedia__body" id="js-wikipedia-body"></div>
+          </div>
+      </div>
+
+      <div class="modal_ad modal_pop">
+        <div class="bg js-modal-close"></div>
+        <div class="modal_pop_main modal_pop">
+            <img src="img/ad.png" style="width:600px;">
+        </div>
+    <!-- </div> -->
+  </div>
+      <!-- jQuery&GoogleMapsAPI -->
+      <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+      <script src='https://www.bing.com/api/maps/mapcontrol?callback=GetMap&key=AuT3PevNT__qZE6XqoiuCVC51FLURL0njCQgifGqrqTW_qxfFdszFhfs_olmsZIb' async
+        defer></script>
+      <script src="js/BmapQuery.js"></script>
+      <script src="js/main.js"></script>
+
+
+  </body>
+
+</html>
